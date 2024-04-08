@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 5vw;
+    margin-block: 50px;
+}
+.about-content div:nth-child(2){
+    color : black;
+    text-align: center;
+    width : 100vw;
+}
+.about-content div:nth-child(2) h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color : #123558;
+}
+.about-content div:nth-child(2) p{
+    font-size: 1.4rem;
+}
+.about-content div:nth-child(1) img{
+    /* width : 15vw; */
+    height : 35vh;
+    object-fit:cover;
+    border-radius: 20px;
+}
+.about-content div:nth-child(3) img{
+    /* width : 15vw; */
+    height : 35vh;
+    object-fit:cover;
+    border-radius: 20px;
+}
+.about-pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap : 10vw; */
+    margin-top: 60px;
+    padding-inline: 50px;
+}
+.about-pic1{
+    height : 38vh;
+    width : 25%;
+    background: url(https://img.freepik.com/free-vector/webinar-concept-illustration_114360-4764.jpg?w=740&t=st=1712566939~exp=1712567539~hmac=d842e1c558d9215d57e600f382722d385f405bf13a1a25cc1d4548b7a539f2aa);
+    background-size:cover ;
+    background-position: center;
+    border-radius: 20px;
+}
+.about-pic2{
+    height : 38vh;
+    width : 25vw;
+    background: url(https://img.freepik.com/free-vector/seminar-concept-illustration_114360-7480.jpg?w=740&t=st=1712566588~exp=1712567188~hmac=ea6d04f0f3c74f424d58c5347f3a73b7624b4a9e92f54758cc1a49d73f3d310b);
+    background-size: cover ;
+    background-position: center;
+    border-radius: 20px;
+}
+.about-pic3{
+    height : 38vh;
+    width : 25vw;
+    background: url(https://img.freepik.com/free-vector/coding-workshop-concept-illustration_114360-8112.jpg?w=740&t=st=1712566868~exp=1712567468~hmac=cb0d644dd4a9002f61c762fb5232190473fd2ffa34e7e6844ceb36479af44c86);
+    background-size: cover ;
+    border-radius: 20px;
+}
+
+
+
+
+.overlay{
+    height : 100%;
+    width : 100%;
+    background-color: #123558;
+    border-radius: 20px;
+    padding : 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 20px;
+    opacity: 0;
+    transition: all linear 0.5s;
+    color : white;
+}
+.overlay p{
+    font-size: 1rem;
+}
+.about-pic1:hover .overlay{
+    opacity: 0.8;
+}
+.about-pic2:hover .overlay{
+    opacity: 0.8;
+}
+.about-pic3:hover .overlay{
+    opacity: 0.8;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about-upper-pic{
+        display: none;
+      }
+      .about-content div:nth-child(2){
+        padding: 0 50px;
+        width: 100%;
+      }
+    
+      .overlay h2{
+        font-size: 1rem;
+    }
+    
+    .about-content div:nth-child(2) h1{
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    .scroller-in h4{
+        font-size: 2rem;
+      }
+    .logo1>img{
+        height : 50px;
+    }
+    .about-pic1{
+        display: none;
+    }
+    .about-pic2{
+        display: none;
+    }
+    .about-pic3{
+        display: none;
+    }
+    .about-content div:nth-child(2) h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .about-content div:nth-child(2) p{
+        font-size: 1rem;
+    }
+    .about-content div:nth-child(2){
+        padding-inline: 20px;
+    }
+}

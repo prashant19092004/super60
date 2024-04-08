@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero.js'
+import About from './components/About/About.js'
+import Slider from './components/Slider/Slider.js'
+import NumberShow from './components/NumberShow/NumberShow.js'
+import Text_Slider from './components/Text_Slider/Text_Slider.js'
+import Footer from './components/Footer/Footer.js'
+import Testimonials from './components/Testimonials/Testimonials.js'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <NumberShow />
+      {/* <Testimonials /> */}
+      <Text_Slider />
+      {/* <Slider /> */}
+      <Footer />
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
